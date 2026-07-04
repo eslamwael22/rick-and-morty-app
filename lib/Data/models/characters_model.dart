@@ -30,6 +30,8 @@ class CharactersModel {
       origin: Origin.fromJson(json['origin']),
     );
   }
+
+  Future<Object?> getAllCharacters() async {}
 }
 
 class Origin {
