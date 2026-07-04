@@ -1,4 +1,4 @@
-import 'package:films_project/constants/Routers/Go_Routers.dart';
+import 'package:films_project/core/constants/app_routers.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +9,9 @@ class RickAndMorty extends StatelessWidget {
   const RickAndMorty({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(routerConfig: router);
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routerConfig: router,
+    );
   }
 }
