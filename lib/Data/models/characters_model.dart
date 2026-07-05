@@ -7,6 +7,7 @@ class CharactersModel {
   String gender;
   String image;
   final Origin origin;
+  final List<String> episodeUrls;
 
   CharactersModel({
     required this.id,
@@ -17,7 +18,9 @@ class CharactersModel {
     required this.gender,
     required this.image,
     required this.origin,
+    required this.episodeUrls,
   });
+
   factory CharactersModel.fromJson(Map<String, dynamic> json) {
     return CharactersModel(
       id: json['id'],
@@ -28,11 +31,8 @@ class CharactersModel {
       gender: json['gender'],
       image: json['image'],
       origin: Origin.fromJson(json['origin']),
+      episodeUrls: List<String>.from(json['episode'] ?? []),
     );
-  }
-
-  Future<Object?> getAllCharacters() async {
-    return null;
   }
 }
 
