@@ -31,7 +31,9 @@ class CharactersModel {
     );
   }
 
-  Future<Object?> getAllCharacters() async {}
+  Future<Object?> getAllCharacters() async {
+    return null;
+  }
 }
 
 class Origin {

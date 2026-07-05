@@ -3,7 +3,6 @@ import '../models/characters_model.dart';
 
 class CharactersRepository {
   final CharactersWebService webService;
-
   CharactersRepository(this.webService);
 
   Future<List<CharactersModel>> getAllCharacters() async {
