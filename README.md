@@ -84,8 +84,6 @@ Flutter Developer
 GitHub:
 https://github.com/eslamwael22
 
-LinkedIn:
-https://linkedin.com/in/eslamwael22
 
 ---
 
